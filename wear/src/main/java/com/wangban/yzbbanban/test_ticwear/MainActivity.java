@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-    private TextView mTextView;
+    private RoundImageView mRoundImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,8 @@ public class MainActivity extends Activity {
         stub.setOnLayoutInflatedListener(new WatchViewStub.OnLayoutInflatedListener() {
             @Override
             public void onLayoutInflated(WatchViewStub stub) {
-                mTextView = (TextView) stub.findViewById(R.id.text);
+                mRoundImageView= (RoundImageView) findViewById(R.id.mRoundImageView);
+                
             }
         });
     }

@@ -5,12 +5,10 @@
     android:layout_height="match_parent"
     tools:context="com.wangban.yzbbanban.test_ticwear.MainActivity"
     tools:deviceIds="wear_round">
-
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="hello——宇智波斑斑" />
+    <com.wangban.yzbbanban.test_ticwear.RoundImageView
+        android:id="@+id/mRoundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/be6" />
 </RelativeLayout>
