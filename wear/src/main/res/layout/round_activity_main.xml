@@ -5,10 +5,17 @@
     android:layout_height="match_parent"
     tools:context="com.wangban.yzbbanban.test_ticwear.MainActivity"
     tools:deviceIds="wear_round">
-    <com.wangban.yzbbanban.test_ticwear.RoundImageView
-        android:id="@+id/mRoundImageView"
+
+    <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@mipmap/be6" />
+        android:layout_height="300dp"
+        app:delay_time="1000dp"
+        app:indicator_drawable_selected="@color/blue"
+        app:indicator_drawable_unselected="@color/card_default_background"
+        app:indicator_height="8dp"
+        app:indicator_margin="40dp"
+        app:indicator_width="8dp"
+        app:is_auto_play="true">
+    </com.youth.banner.Banner>
 </RelativeLayout>
